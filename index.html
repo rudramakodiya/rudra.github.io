@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rudra Makodiya | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <h1>MY PORTFOLIO</h1>
+    <p>Rudra Yogesh Makodiya · Grade 6 · Amba School for Excellence</p>
+  </header>
+
+  <!-- BUTTON GRID -->
+  <main class="grid">
+    <div class="card" onclick="openSection('about')">About Me</div>
+    <div class="card" onclick="openSection('books')">Books I Read</div>
+    <div class="card" onclick="openSection('hobbies')">Hobbies</div>
+    <div class="card" onclick="openSection('glyphcode')">My Invention</div>
+    <div class="card" onclick="openSection('projects')">Projects</div>
+    <div class="card" onclick="openSection('achievements')">Achievements</div>
+    <div class="card" onclick="openSection('goals')">Goals</div>
+    <div class="card" onclick="openSection('investments')">Investments</div>
+  </main>
+
+  <!-- CONTENT SECTIONS -->
+  <section id="about" class="page">
+    <h2>About Me</h2>
+    <p>
+      My name is Rudra Yogesh Makodiya. I study in Grade 6 at Amba School for Excellence.
+      I enjoy learning Mathematics, English, and Sanskrit and love understanding how things work.
+      I learn best through projects, videos, and activities.
+      I am also working on improving my time management skills.
+    </p>
+  </section>
+
+  <section id="books" class="page">
+    <h2>Books That I Read</h2>
+    <p>
+      My favourite series is <b>The Magic Tree House</b>, about Jack and Annie who travel
+      using a magical tree house.
+    </p>
+    <p>
+      My favourite book is <b>The Dragon of the Red Dawn</b>.
+    </p>
+  </section>
+
+  <section id="hobbies" class="page">
+    <h2>My Hobbies</h2>
+    <ul>
+      <li>Playing Badminton</li>
+      <li>Playing Mobile Games</li>
+      <li>Minecraft, BedWars, Roblox, Fruit Ninja</li>
+    </ul>
+  </section>
+
+  <section id="glyphcode" class="page">
+    <h2>My Invention – GlyphCode</h2>
+    <p>
+      GlyphCode is a self-created symbolic writing system for English.
+      Letters and words are represented using unique symbols like @, |, ₹, ¶, and ∆.
+      It shows creativity, originality, and structured thinking.
+    </p>
+  </section>
+
+  <section id="projects" class="page">
+    <h2>Projects That I Made</h2>
+    <ul>
+      <li>Maths Game – Grade 4</li>
+      <li>Water Cycle Model – Grade 4</li>
+      <li>Choice Boards (Social Science) – Grade 6</li>
+    </ul>
+  </section>
+
+  <section id="achievements" class="page">
+    <h2>Achievements & Participations</h2>
+    <ul>
+      <li>International Mathematics Olympiad (IMO)</li>
+      <li>GK Competition – Winner (Level 1)</li>
+      <li>GK Competition – 2nd Place (Level 2)</li>
+      <li>Typing Test & Extempore Competition</li>
+    </ul>
+  </section>
+
+  <section id="goals" class="page">
+    <h2>My Goals</h2>
+    <p>
+      I want to become a Businessman like my father and also a CTO (Chief Technology Officer).
+      My plan is to choose Science, crack JEE, study at IIT, gain experience, and start a
+      software and hardware business.
+    </p>
+  </section>
+
+  <section id="investments" class="page">
+    <h2>Investments in the Future</h2>
+    <p>
+      I would like to invest in the stock market (for example, Apple),
+      and also in gold, silver, and diamonds.
+      Physical assets must be stored safely.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Contact: rudra.makodiya@gmail.com</p>
+    <p>© 2026 Rudra Makodiya</p>
+  </footer>
+
+  <script>
+    function openSection(id) {
+      document.querySelectorAll('.page').forEach(p => p.style.display = 'none');
+      const section = document.getElementById(id);
+      section.style.display = 'block';
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
